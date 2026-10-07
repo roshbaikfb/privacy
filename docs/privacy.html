@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>سياسة الخصوصية — دبّرها</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق دبّرها: التطبيق لا يجمع أي بيانات، ولا يتصل بالإنترنت، ولا يطلب أي أذونات.">
+<style>
+  /* Fonts are self-hosted so this page makes no third-party requests. */
+  @font-face { font-family: "Plex Arabic"; src: url("fonts/ibm_plex_arabic_regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Plex Arabic"; src: url("fonts/ibm_plex_arabic_semibold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+  @font-face { font-family: "Plex Arabic"; src: url("fonts/ibm_plex_arabic_bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+  :root {
+    --bg: #F3F5F2;
+    --surface: #FFFFFF;
+    --ink: #13261F;
+    --muted: #5A6B64;
+    --line: #E3E8E4;
+    --primary: #11604A;
+    --primary-soft: #EAF3EF;
+    --accent: #F2B24C;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Plex Arabic", "Segoe UI", Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+  .logo {
+    width: 52px; height: 52px; flex: 0 0 auto;
+    border-radius: 16px; background: var(--primary);
+    display: grid; place-items: center;
+  }
+  .brand { display: flex; flex-direction: column; }
+  .brand small { color: var(--muted); font-size: 13px; }
+  h1 { margin: 0; font-size: 26px; font-weight: 700; line-height: 1.3; }
+
+  .summary {
+    background: var(--primary); color: #fff;
+    border-radius: 24px; padding: 22px 24px;
+    font-size: 17px; font-weight: 600; line-height: 1.75;
+  }
+  .meta { color: var(--muted); font-size: 14px; margin: 12px 4px 8px; }
+
+  .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 18px 0 8px; }
+  .fact {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+    padding: 14px; text-align: center; font-weight: 600; font-size: 15px;
+  }
+  .fact b { display: block; font-size: 22px; color: var(--primary); line-height: 1.3; }
+
+  section {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 20px; padding: 18px 20px; margin-top: 12px;
+  }
+  h2 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+  p { margin: 0; }
+  ul { margin: 6px 0 0; padding-inline-start: 22px; }
+  li { margin: 2px 0; }
+  a { color: var(--primary); font-weight: 600; }
+  a:hover { color: #0B4535; }
+
+  .en { margin-top: 40px; }
+  .en .divider { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+  .en .divider::before, .en .divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .en section, .en .summary { font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; line-height: 1.65; }
+
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+
+  @media (max-width: 520px) {
+    .wrap { padding-top: 20px; }
+    h1 { font-size: 22px; }
+    .summary { font-size: 16px; padding: 18px; }
+    .facts { grid-template-columns: 1fr; }
+    section { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg width="34" height="34" viewBox="30 30 48 48" fill="none">
+        <path d="M34 52 L54 35 L74 52 L74 75 L34 75 Z" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M45 58 L63 58 M45 66 L57 66" stroke="#F2B24C" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="brand">
+      <small>تطبيق دبّرها</small>
+      <h1>سياسة الخصوصية</h1>
+    </div>
+  </header>
+
+  <div class="summary">
+    باختصار: دبّرها لا يجمع أي بيانات عنك. كل ما تكتبه يبقى على هاتفك فقط، والتطبيق لا يتصل بالإنترنت ولا يطلب أي إذن.
+  </div>
+  <p class="meta">آخر تحديث: 6 أكتوبر 2026 · ينطبق على تطبيق أندرويد «دبّرها» (com.daftarelbeit.customer)</p>
+
+  <div class="facts">
+    <div class="fact"><b>0</b>بيانات نجمعها</div>
+    <div class="fact"><b>0</b>أذونات مطلوبة</div>
+    <div class="fact"><b>0</b>إعلانات أو تتبع</div>
+  </div>
+
+  <section>
+    <h2>من نحن</h2>
+    <p>«دبّرها» تطبيق لمتابعة ميزانية البيت: المصاريف الشهرية، والدروس الخصوصية، والجمعيات، وفواتير الكهرباء والمياه والغاز، وأسعار مشتريات البيت. توضح هذه السياسة كيف يتعامل التطبيق مع بياناتك.</p>
+  </section>
+
+  <section>
+    <h2>البيانات التي نجمعها</h2>
+    <p>لا شيء. نحن كمطوري التطبيق لا نستلم ولا نطّلع على أي بيانات منك. لا توجد حسابات ولا تسجيل دخول.</p>
+  </section>
+
+  <section>
+    <h2>البيانات التي تكتبها داخل التطبيق</h2>
+    <p>المصاريف، والظروف، والدخل، وأسماء الأبناء والمدرسين، والجمعيات، وقراءات العدادات، والأسعار — كل ذلك يُحفظ في قاعدة بيانات داخل التطبيق على هاتفك فقط، ولا يخرج منه إلا إذا قمت أنت بعمل نسخة احتياطية أو مشاركة كشف الشهر.</p>
+  </section>
+
+  <section>
+    <h2>الإنترنت والتتبع</h2>
+    <p>التطبيق لا يطلب إذن الوصول إلى الإنترنت أصلًا، لذلك لا يستطيع إرسال أي بيانات إلى أي مكان. لا توجد إعلانات، ولا أدوات تحليل، ولا تتبع، ولا مشاركة مع أي طرف ثالث.</p>
+  </section>
+
+  <section>
+    <h2>الأذونات</h2>
+    <p>التطبيق لا يطلب أي إذن من أذونات أندرويد: لا الكاميرا، ولا الموقع، ولا جهات الاتصال، ولا الملفات، ولا الإشعارات.</p>
+  </section>
+
+  <section>
+    <h2>النسخة الاحتياطية والمشاركة</h2>
+    <p>عند حفظ نسخة احتياطية أو مشاركة كشف الشهر كصورة، يفتح أندرويد شاشة تختار منها المكان أو التطبيق. يُرسل الملف إلى المكان الذي تختاره أنت فقط، ويخضع بعدها لسياسة تلك الخدمة (مثل Google Drive أو واتساب). ملف النسخة الاحتياطية غير مشفّر، لذا احفظه في مكان آمن.</p>
+  </section>
+
+  <section>
+    <h2>النسخ الاحتياطي التلقائي من أندرويد</h2>
+    <p>النسخ الاحتياطي التلقائي إلى حساب جوجل والنقل التلقائي بين الأجهزة معطّلان في التطبيق، حتى لا تنتقل بياناتك إلى أي مكان دون اختيارك.</p>
+  </section>
+
+  <section>
+    <h2>حذف بياناتك</h2>
+    <p>يمكنك حذف أي مصروف أو قراءة أو سعر من داخل التطبيق. ولحذف كل شيء: امسح بيانات التطبيق من إعدادات أندرويد أو قم بإلغاء تثبيته. تُحذف البيانات حينها نهائيًا، ولا يمكننا استرجاعها لأنها ليست لدينا.</p>
+  </section>
+
+  <section>
+    <h2>الأطفال</h2>
+    <p>التطبيق موجّه للبالغين الذين يديرون ميزانية البيت. أسماء الأبناء التي تكتبها في «دفتر الدروس» تبقى على جهازك فقط مثل باقي البيانات.</p>
+  </section>
+
+  <section>
+    <h2>التغييرات على هذه السياسة</h2>
+    <p>إذا تغيّرت هذه السياسة، ستجد النسخة الجديدة في هذه الصفحة وداخل التطبيق مع تاريخ آخر تحديث.</p>
+  </section>
+
+  <section>
+    <h2>التواصل</h2>
+    <p>لأي سؤال عن الخصوصية، راسلنا على: <a href="mailto:aasd292@gmail.com">aasd292@gmail.com</a></p>
+  </section>
+
+  <!-- English version for store reviewers and non-Arabic readers -->
+  <div class="en" lang="en" dir="ltr">
+    <div class="divider">English</div>
+
+    <div class="summary">
+      In short: Daftar El-Beit collects no data about you. Everything you enter stays on your phone only. The app never connects to the internet and requests no permissions.
+    </div>
+    <p class="meta">Last updated: October 6, 2026 · Applies to the Android app “Daftar El-Beit” (com.daftarelbeit.customer)</p>
+
+    <section>
+      <h2>Data we collect</h2>
+      <p>None. We, the developers, do not receive or have access to any of your data. There are no accounts and no sign-in.</p>
+    </section>
+
+    <section>
+      <h2>Data you enter in the app</h2>
+      <p>Expenses, budget envelopes, income, names of children and tutors, savings circles (gameya), meter readings and item prices are stored in a database inside the app on your device only. They leave the device only if you create a backup file or share a monthly report yourself.</p>
+    </section>
+
+    <section>
+      <h2>Internet, ads and tracking</h2>
+      <p>The app does not request the internet permission, so it cannot send data anywhere. It contains no ads, no analytics, no tracking, and shares nothing with third parties.</p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <p>The app requests no Android permissions: no camera, location, contacts, storage or notifications.</p>
+    </section>
+
+    <section>
+      <h2>Backups and sharing</h2>
+      <p>When you save a backup or share a monthly report as an image, Android opens a picker where you choose the destination. The file goes only where you choose and is then subject to that service’s policy (for example Google Drive or WhatsApp). Backup files are not encrypted, so keep them somewhere safe.</p>
+      <p>Android’s automatic cloud backup and device-to-device transfer are disabled for this app.</p>
+    </section>
+
+    <section>
+      <h2>Deleting your data</h2>
+      <p>You can delete any entry inside the app. To delete everything, clear the app’s data in Android settings or uninstall it. The data is then permanently removed; we cannot recover it because we never had it.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>The app is intended for adults managing a household budget. Children’s names entered in the tutoring section stay on the device like all other data.</p>
+    </section>
+
+    <section>
+      <h2>Changes and contact</h2>
+      <p>Any change to this policy will be published on this page and in the app with a new “last updated” date. Questions: <a href="mailto:aasd292@gmail.com">aasd292@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>© 2026 دبّرها</footer>
+</main>
+</body>
+</html>
